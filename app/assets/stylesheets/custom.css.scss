@@ -1,2 +1,41 @@
+$navbar-default-bg: #08088A;
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+#logo {
+	float: left;
+	font-size: #fff;
+	text-tansform: uppercase;
+	letter-spacing: -1px;
+	font-weight: bold;
+}
+#logo:hover {
+	color: #fff;
+	text-decoration: none;
+}
+.center {
+	text-align: center;
+}
+footer{
+	margin-top: 45px;
+	padding-top: 5px;
+	border-top: 1px solid #eaeaea;
+	color: #777
+}
+footer a:hover{
+	color: #222;
+}
+footer small {
+	
+	float: left;
+
+}
+footer ul
+{
+	float: right;
+	list-style: none;
+}
+footer ul li {
+	float: left;
+	margin-left: 15px;
+}
