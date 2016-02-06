@@ -1,3 +1,4 @@
 <h1> Welcome <%= @user.user_name %> </h1>
 
-<%= render 'articles/article', obj: @user.articles %>
+<%= render 'articles/article', obj: @user_articles %>
+<%= will_paginate @user_articles %>
