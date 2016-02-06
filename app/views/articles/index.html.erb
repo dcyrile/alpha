@@ -1,18 +1,1 @@
-<%= link_to("Create new article", new_article_path) %>
-<table>
-<tr>
-	<th> Article </th>
-	<th> Description </th>
-</tr>
-<% @articles.each do | article | %>
-<tr>
-	<td> <%= article.title %> </td>
-	<td> <%= article.description %></td>
-	<td> <%= link_to("Show", article_path(article)) %> </td>
-	<td> <%=  link_to("Edit", edit_article_path(article)) %> </td>
-	<td> <%= link_to("Delete", article_path(article), method: :delete, data: {confirm: "Are you sure"}) %> </td>
-	<td> <%= article.user.user_name if article.user %> </td>
-</tr>
-
-<% end %>
-</table>
+<%= render 'article', obj: @articles %>
