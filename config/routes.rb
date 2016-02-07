@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
   get 'home' => 'page#home'
   get 'about' => 'page#about'
-  root 'page#home'
+  root 'page#home' 
   get 'signup' => 'users#new'
+  get 'login' => 'sessions#new'
+  post 'login' => 'sessions#create'
+  delete 'logout' => 'sessions#destroy'
   resources :users, except: [:new]
   resources :articles
   # The priority is based upon order of creation: first created -> highest priority.
